@@ -11,7 +11,6 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import cn.rongcloud.im.R;
@@ -64,11 +63,6 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
         mGetCode.setOnClickListener(this);
         mGetCode.setClickable(false);
         mConfirm.setOnClickListener(this);
-
-        TextView goLogin = (TextView) findViewById(R.id.reg_login);
-        TextView goForget = (TextView) findViewById(R.id.reg_forget);
-        goLogin.setOnClickListener(this);
-        goForget.setOnClickListener(this);
 
         mImgBackground = (ImageView) findViewById(R.id.rg_img_backgroud);
         new Handler().postDelayed(new Runnable() {
@@ -278,12 +272,6 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.reg_login:
-                startActivity(new Intent(this, LoginActivity.class));
-                break;
-            case R.id.reg_forget:
-                startActivity(new Intent(this, ForgetPasswordActivity.class));
-                break;
             case R.id.reg_getcode:
                 if (TextUtils.isEmpty(mPhoneEdit.getText().toString().trim())) {
                     NToast.longToast(mContext, R.string.phone_number_is_null);

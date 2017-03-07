@@ -152,18 +152,6 @@
 
     </LinearLayout>
 
-
-    <TextView
-        android:id="@+id/reg_forget"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:padding="15dp"
-        android:text="@string/forgot_password"
-        android:textColor="#999999"
-        android:textSize="14sp" />
-
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -176,15 +164,5 @@
         />
 
 
-    <TextView
-        android:id="@+id/reg_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:padding="15dp"
-        android:text="@string/Login"
-        android:textColor="#999999"
-        android:textSize="14sp" />
 
 </RelativeLayout>
