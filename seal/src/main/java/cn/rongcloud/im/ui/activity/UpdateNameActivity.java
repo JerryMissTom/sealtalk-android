@@ -18,7 +18,7 @@ import cn.rongcloud.im.server.widget.LoadDialog;
 import io.rong.imkit.RongIM;
 import io.rong.imlib.model.UserInfo;
 
-/**
+/**修改昵称
  * Created by AMing on 16/6/23.
  * Company RongCloud
  */
@@ -62,7 +62,7 @@ public class UpdateNameActivity extends BaseActivity implements View.OnClickList
             editor.commit();
 
             BroadcastManager.getInstance(mContext).sendBroadcast(SealConst.CHANGEINFO);
-
+            //更新成功后发送通知
             RongIM.getInstance().refreshUserInfoCache(new UserInfo(sp.getString(SealConst.SEALTALK_LOGIN_ID, ""), newName, Uri.parse(sp.getString(SealConst.SEALTALK_LOGING_PORTRAIT, ""))));
             RongIM.getInstance().setCurrentUserInfo(new UserInfo(sp.getString(SealConst.SEALTALK_LOGIN_ID, ""), newName, Uri.parse(sp.getString(SealConst.SEALTALK_LOGING_PORTRAIT, ""))));
 

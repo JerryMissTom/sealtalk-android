@@ -10,7 +10,7 @@ import android.webkit.WebViewClient;
 
 import cn.rongcloud.im.R;
 
-
+//官方网站的日志页
 @SuppressLint("SetJavaScriptEnabled")
 public class UpdateLogActivity extends BaseActivity {
 

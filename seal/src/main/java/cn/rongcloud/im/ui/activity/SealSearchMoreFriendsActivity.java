@@ -36,7 +36,6 @@ import cn.rongcloud.im.db.Friend;
 import cn.rongcloud.im.db.FriendDao;
 import cn.rongcloud.im.model.SearchResult;
 import cn.rongcloud.im.server.pinyin.CharacterParser;
-import cn.rongcloud.im.server.utils.RongGenerate;
 import cn.rongcloud.im.server.widget.SelectableRoundedImageView;
 import de.greenrobot.dao.query.QueryBuilder;
 import io.rong.imageloader.core.ImageLoader;
@@ -81,7 +80,7 @@ public class SealSearchMoreFriendsActivity extends Activity implements AdapterVi
     public void initData() {
 
         mExecutor = new ThreadPoolExecutor(3, 5, 0, TimeUnit.MILLISECONDS, new LinkedBlockingQueue<Runnable>());
-
+        //文字改变时，新线程从数据库获取Friend数据
         mSearchEditText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {

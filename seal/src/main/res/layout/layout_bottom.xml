@@ -130,7 +130,8 @@
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:layout_centerHorizontal="true"
-                android:gravity="center">
+                android:gravity="center"
+                android:layout_alignParentTop="true">
 
                 <ImageView
                     android:id="@+id/tab_img_find"

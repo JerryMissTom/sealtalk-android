@@ -93,6 +93,8 @@ public class SealSearchChattingDetailActivity extends Activity {
         if (mFlag == SEARCH_TYPE_FLAG) {
             mTitleTextView.setVisibility(View.GONE);
         }
+
+        //文字改变从网络搜索信息
         mSearchEditText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -186,6 +188,7 @@ public class SealSearchChattingDetailActivity extends Activity {
             }
         });
 
+        //触摸删除按钮，清空搜索栏
         mSearchEditText.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {

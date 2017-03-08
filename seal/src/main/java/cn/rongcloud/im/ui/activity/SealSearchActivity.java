@@ -194,6 +194,7 @@ public class SealSearchActivity extends Activity {
             }
         });
 
+        //每次文字变化就起一个子线程搜索数据库获取Friend和Group的信息，从网络获取聊天信息信息。使用线程池管理数据请求线程
         mSearchEditText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -367,6 +368,7 @@ public class SealSearchActivity extends Activity {
             }
         });
 
+        //触摸到取消按钮，删除搜索内容
         mSearchEditText.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {

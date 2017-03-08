@@ -1,6 +1,5 @@
 package cn.rongcloud.im.ui.activity;
 
-import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Editable;
@@ -17,8 +16,8 @@ import cn.rongcloud.im.server.response.ChangePasswordResponse;
 import cn.rongcloud.im.server.utils.NToast;
 import cn.rongcloud.im.server.widget.LoadDialog;
 
-/**
- * Created by AMing on 16/6/23.
+/**密码修改
+ * Created by AMing on 16/
  * Company RongCloud
  */
 public class UpdatePasswordActivity extends BaseActivity implements View.OnClickListener {

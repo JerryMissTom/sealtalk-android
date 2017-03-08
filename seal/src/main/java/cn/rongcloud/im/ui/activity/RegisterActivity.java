@@ -26,7 +26,7 @@ import cn.rongcloud.im.server.utils.downtime.DownTimerListener;
 import cn.rongcloud.im.server.widget.ClearWriteEditText;
 import cn.rongcloud.im.server.widget.LoadDialog;
 
-/**
+/**注册界面
  * Created by AMing on 16/1/14.
  * Company RongCloud
  */

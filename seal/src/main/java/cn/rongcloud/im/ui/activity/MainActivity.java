@@ -79,7 +79,7 @@ public class MainActivity extends FragmentActivity implements
         registerHomeKeyReceiver(this);
     }
 
-
+    //初始化View
     private void initViews() {
         RelativeLayout chatRLayout = (RelativeLayout) findViewById(R.id.seal_chat);
         RelativeLayout contactRLayout = (RelativeLayout) findViewById(R.id.seal_contact_list);
@@ -107,11 +107,13 @@ public class MainActivity extends FragmentActivity implements
             @Override
             public void onReceive(Context context, Intent intent) {
                 mMineRed.setVisibility(View.VISIBLE);
+                //显示可以拖曳的小红点，和QQ的一样，参见：http://blog.csdn.net/qq_19986309/article/details/50145977
+                //和http://blog.csdn.net/u011748648/article/details/48132349
             }
         });
     }
 
-
+    //初始化ViewPager的内容
     private void initMainViewPager() {
         Fragment conversationList = initConversationList();
         mViewPager = (ViewPager) findViewById(R.id.main_viewpager);
@@ -141,7 +143,7 @@ public class MainActivity extends FragmentActivity implements
         initData();
     }
 
-
+    //ConversationListFragment是融云lib中的
     private Fragment initConversationList() {
         if (mConversationListFragment == null) {
             ConversationListFragment listFragment = new ConversationListFragment();
@@ -390,7 +392,7 @@ public class MainActivity extends FragmentActivity implements
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
-            moveTaskToBack(false);
+            moveTaskToBack(false);//按返回键退到后台，并不杀死Activity
             return true;
         }
         return super.onKeyDown(keyCode, event);
@@ -423,6 +425,8 @@ public class MainActivity extends FragmentActivity implements
         super.onDestroy();
     }
 
+
+    //未读消息的小红点被清除
     @Override
     public void onDragOut() {
         mUnreadNumView.setVisibility(View.GONE);

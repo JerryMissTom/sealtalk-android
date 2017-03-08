@@ -10,7 +10,7 @@ import android.webkit.WebViewClient;
 
 import cn.rongcloud.im.R;
 
-
+//官方网站的地址
 @SuppressLint("SetJavaScriptEnabled")
 public class RongWebActivity extends BaseActivity {
 

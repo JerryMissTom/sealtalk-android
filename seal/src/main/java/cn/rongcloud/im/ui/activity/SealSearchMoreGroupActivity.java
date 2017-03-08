@@ -79,6 +79,7 @@ public class SealSearchMoreGroupActivity extends Activity {
         mGroupListResultsLinearLayout = (LinearLayout)findViewById(R.id.ac_ll_group_list_result);
         mSearchEditText.setText(mFilterString);
 
+        //文字改变，从数据库获取数据
         mSearchEditText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -145,6 +146,7 @@ public class SealSearchMoreGroupActivity extends Activity {
             }
         });
 
+        //触摸删除图标，清空搜索栏
         mSearchEditText.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
