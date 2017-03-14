@@ -49,7 +49,7 @@ import io.rong.imlib.model.Conversation;
 import io.rong.imlib.model.SearchConversationResult;
 import io.rong.imlib.model.UserInfo;
 
-/**
+/**搜索聊天记录，搜索更多聊天记录，路径：会话->搜索图标->更多聊天记录
  * Created by tiankui on 16/10/8.
  */
 
@@ -95,6 +95,7 @@ public class SealSearchMoreChattingRecordsActivity extends Activity {
         ChattingRecordsAdapter adapter = new ChattingRecordsAdapter(mSearchConversationResultsArrayList);
         mChattingRecordsListView.setAdapter(adapter);
 
+        //从网络获取所有的聊天记录
         mSearchEditText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {

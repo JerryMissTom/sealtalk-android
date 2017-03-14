@@ -2,7 +2,6 @@ package cn.rongcloud.im.ui.activity;
 
 import android.content.Intent;
 import android.graphics.Color;
-import android.net.Uri;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextUtils;
@@ -23,7 +22,7 @@ import cn.rongcloud.im.server.widget.LoadDialog;
 import io.rong.imkit.RongIM;
 import io.rong.imlib.model.UserInfo;
 
-/**
+/**设置备注界面，路径：通讯录—>任一好友->右上角详情->点击头像->设置备注
  * Created by AMing on 16/8/10.
  * Company RongCloud
  */

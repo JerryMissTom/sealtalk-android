@@ -10,7 +10,7 @@ import cn.rongcloud.im.R;
 
 
 /**
- *
+ * 包含一个ProgressBar和TextView的Loading页面
  * Created by bob on 2015/1/28.
  */
 public class LoadingDialog extends Dialog {

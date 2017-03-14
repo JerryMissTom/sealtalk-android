@@ -53,7 +53,7 @@ import io.rong.imlib.model.Conversation;
 import io.rong.imlib.model.UserInfo;
 import io.rong.imlib.model.UserOnlineStatusInfo;
 
-/**
+/** 用户详情页面，路径：通讯录—>任一好友->右上角详情->点击头像
  * Created by tiankui on 16/11/2.
  */
 

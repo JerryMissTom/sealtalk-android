@@ -28,7 +28,7 @@ import cn.rongcloud.im.server.utils.NToast;
 import cn.rongcloud.im.server.widget.LoadDialog;
 import cn.rongcloud.im.ui.adapter.NewFriendListAdapter;
 
-
+//新的朋友界面：路径：通讯录=》新的朋友
 public class NewFriendListActivity extends BaseActivity implements NewFriendListAdapter.OnItemButtonClick, View.OnClickListener {
 
     private static final int GET_ALL = 11;

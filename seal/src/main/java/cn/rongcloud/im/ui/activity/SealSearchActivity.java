@@ -62,7 +62,7 @@ import io.rong.imlib.model.Conversation;
 import io.rong.imlib.model.SearchConversationResult;
 import io.rong.imlib.model.UserInfo;
 
-/**
+/**搜索页面，路径：会话->搜索图标
  * Created by tiankui on 16/8/31.
  */
 public class SealSearchActivity extends Activity {
@@ -194,6 +194,7 @@ public class SealSearchActivity extends Activity {
             }
         });
 
+        //从本地数据库获取Friend和Group，从网络获取聊天记录
         mSearchEditText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -396,6 +397,7 @@ public class SealSearchActivity extends Activity {
         mCharacterParser = CharacterParser.getInstance();
     }
 
+    //从数据库获取符合条件的数据
     private synchronized SearchResult filterInfo(String filterStr) {
 
         List<Friend> filterFriendList = new ArrayList<>();

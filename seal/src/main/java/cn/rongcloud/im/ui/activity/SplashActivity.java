@@ -14,7 +14,7 @@ import cn.rongcloud.im.R;
 import cn.rongcloud.im.SealAppContext;
 import io.rong.imkit.RongIM;
 
-/**
+/**启动页
  * Created by AMing on 16/8/5.
  * Company RongCloud
  */

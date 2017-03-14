@@ -39,7 +39,7 @@ import cn.rongcloud.im.ui.adapter.GroupListAdapter;
 import de.greenrobot.dao.query.QueryBuilder;
 import io.rong.imkit.RongIM;
 
-/**
+/**搜索更多Group，路径：会话->搜索图标->更多群组
  * Created by tiankui on 16/9/20.
  */
 public class SealSearchMoreGroupActivity extends Activity {
@@ -79,6 +79,7 @@ public class SealSearchMoreGroupActivity extends Activity {
         mGroupListResultsLinearLayout = (LinearLayout)findViewById(R.id.ac_ll_group_list_result);
         mSearchEditText.setText(mFilterString);
 
+        //从数据库中获取数据
         mSearchEditText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {

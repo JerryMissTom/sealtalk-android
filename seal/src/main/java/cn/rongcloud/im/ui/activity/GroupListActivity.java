@@ -25,12 +25,11 @@ import cn.rongcloud.im.SealConst;
 import cn.rongcloud.im.SealUserInfoManager;
 import cn.rongcloud.im.db.Groups;
 import cn.rongcloud.im.server.broadcast.BroadcastManager;
-import cn.rongcloud.im.server.utils.RongGenerate;
 import cn.rongcloud.im.server.widget.SelectableRoundedImageView;
 import io.rong.imageloader.core.ImageLoader;
 import io.rong.imkit.RongIM;
 
-/**
+/**群组界面，路径：通讯录=》群组
  * Created by AMing on 16/3/8.
  * Company RongCloud
  */
@@ -106,6 +105,7 @@ public class GroupListActivity extends BaseActivity {
         });
     }
 
+    //搜索栏中文字变化后，过滤数据
     private void filterData(String s) {
         List<Groups> filterDataList = new ArrayList<>();
         if (TextUtils.isEmpty(s)) {

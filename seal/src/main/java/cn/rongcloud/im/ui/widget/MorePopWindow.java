@@ -17,7 +17,7 @@ import cn.rongcloud.im.R;
 import cn.rongcloud.im.ui.activity.SearchFriendActivity;
 import cn.rongcloud.im.ui.activity.SelectFriendsActivity;
 
-
+//点击+号后的PopupWindow
 public class MorePopWindow extends PopupWindow {
 
     @SuppressLint("InflateParams")

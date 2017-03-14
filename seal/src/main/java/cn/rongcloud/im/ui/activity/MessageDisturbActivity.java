@@ -21,7 +21,7 @@ import cn.rongcloud.im.utils.DateUtils;
 import io.rong.imkit.RongIM;
 import io.rong.imlib.RongIMClient;
 
-/**
+/**消息免打扰界面，路径：我->账户设置->新消息通知->消息免打扰
  * Created by AMing on 16/8/29.
  * Company RongCloud
  */

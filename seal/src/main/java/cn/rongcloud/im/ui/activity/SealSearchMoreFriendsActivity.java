@@ -36,13 +36,12 @@ import cn.rongcloud.im.db.Friend;
 import cn.rongcloud.im.db.FriendDao;
 import cn.rongcloud.im.model.SearchResult;
 import cn.rongcloud.im.server.pinyin.CharacterParser;
-import cn.rongcloud.im.server.utils.RongGenerate;
 import cn.rongcloud.im.server.widget.SelectableRoundedImageView;
 import de.greenrobot.dao.query.QueryBuilder;
 import io.rong.imageloader.core.ImageLoader;
 import io.rong.imkit.RongIM;
 
-/**
+/**搜索更多Friend，路径：会话->搜索图标->更多朋友
  * Created by tiankui on 16/9/2.
  */
 public class SealSearchMoreFriendsActivity extends Activity implements AdapterView.OnItemClickListener {
@@ -82,6 +81,7 @@ public class SealSearchMoreFriendsActivity extends Activity implements AdapterVi
 
         mExecutor = new ThreadPoolExecutor(3, 5, 0, TimeUnit.MILLISECONDS, new LinkedBlockingQueue<Runnable>());
 
+        //从数据库中获取更多好友
         mSearchEditText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {

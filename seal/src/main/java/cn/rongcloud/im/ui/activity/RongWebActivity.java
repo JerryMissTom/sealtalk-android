@@ -10,7 +10,7 @@ import android.webkit.WebViewClient;
 
 import cn.rongcloud.im.R;
 
-
+//官网，路径:我->关于SealTalk->官方网站
 @SuppressLint("SetJavaScriptEnabled")
 public class RongWebActivity extends BaseActivity {
 

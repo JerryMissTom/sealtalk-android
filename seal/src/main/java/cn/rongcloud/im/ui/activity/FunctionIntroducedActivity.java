@@ -9,7 +9,7 @@ import android.webkit.WebViewClient;
 
 import cn.rongcloud.im.R;
 
-
+//功能介绍界面，路径：我->关于SealTalk->功能介绍
 @SuppressLint("SetJavaScriptEnabled")
 public class FunctionIntroducedActivity extends BaseActivity {
 

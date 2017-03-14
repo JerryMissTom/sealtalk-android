@@ -9,12 +9,11 @@ import android.widget.CompoundButton;
 import android.widget.RelativeLayout;
 
 import cn.rongcloud.im.R;
-import cn.rongcloud.im.server.utils.NToast;
 import cn.rongcloud.im.ui.widget.switchbutton.SwitchButton;
 import io.rong.imkit.RongIM;
 import io.rong.imlib.RongIMClient;
 
-
+//开启消息免打扰界面，路径：我->账户设置->新消息通知
 public class NewMessageRemindActivity extends BaseActivity {
 
     private SharedPreferences.Editor editor;

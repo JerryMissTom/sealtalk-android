@@ -16,7 +16,7 @@ import cn.rongcloud.im.R;
 
 
 /**
- * [底部弹出dialog]
+ * [底部弹出dialog]可以用BottomSheet来提供更多的操作选项
  *
  * @author devin.hu
  * @version 1.0

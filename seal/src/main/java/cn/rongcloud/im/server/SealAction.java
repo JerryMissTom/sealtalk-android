@@ -76,7 +76,7 @@ import cn.rongcloud.im.server.response.VersionResponse;
 import cn.rongcloud.im.server.utils.NLog;
 import cn.rongcloud.im.server.utils.json.JsonMananger;
 
-/**
+/**包含所有网络请求的集合，把传过来的参数通过SyncHttpClient的post方法从网络端获取result，最后在View界面解析
  * Created by AMing on 16/1/14.
  * Company RongCloud
  */

@@ -14,7 +14,7 @@ import cn.rongcloud.im.server.broadcast.BroadcastManager;
 import cn.rongcloud.im.server.utils.NToast;
 import cn.rongcloud.im.server.widget.DialogWithYesOrNoUtils;
 
-/**
+/**账户设置界面，路径：我->账户设置
  * Created by AMing on 16/6/23.
  * Company RongCloud
  */

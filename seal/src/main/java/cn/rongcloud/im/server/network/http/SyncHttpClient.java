@@ -64,6 +64,7 @@ import java.util.zip.GZIPInputStream;
 import cn.rongcloud.im.SealConst;
 import cn.rongcloud.im.server.utils.NLog;
 
+//发送网络请求Client
 public class SyncHttpClient {
 
     private final String tag = SyncHttpClient.class.getSimpleName();

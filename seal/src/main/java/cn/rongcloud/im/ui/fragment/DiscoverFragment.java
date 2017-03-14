@@ -19,8 +19,7 @@ import cn.rongcloud.im.server.utils.NToast;
 import io.rong.imkit.RongIM;
 import io.rong.imlib.RongIMClient;
 import io.rong.imlib.model.Conversation;
-
-
+//发现界面
 public class DiscoverFragment extends Fragment implements View.OnClickListener, OnDataListener {
 
     private static final int GETDEFCONVERSATION = 333;

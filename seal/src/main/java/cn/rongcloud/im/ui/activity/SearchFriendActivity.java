@@ -34,6 +34,7 @@ import cn.rongcloud.im.server.widget.SelectableRoundedImageView;
 import io.rong.imageloader.core.ImageLoader;
 import io.rong.imlib.model.UserInfo;
 
+//添加好友，路径：会话->+号->添加好友
 public class SearchFriendActivity extends BaseActivity {
 
     private static final int CLICK_CONVERSATION_USER_PORTRAIT = 1;
@@ -59,6 +60,7 @@ public class SearchFriendActivity extends BaseActivity {
         searchItem = (LinearLayout) findViewById(R.id.search_result);
         searchName = (TextView) findViewById(R.id.search_name);
         searchImage = (SelectableRoundedImageView) findViewById(R.id.search_header);
+        //输入11位手机号会自动开始搜索
         mEtSearch.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {

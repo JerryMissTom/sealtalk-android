@@ -149,6 +149,7 @@ public class UpdateService extends Service {
         appName = getApplicationName();
     }
 
+    //在Builder被启动，在LocalBinder中绑定接口，从Intent中获取参数，开启Notification和Broadcast
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         if (!startDownload && intent != null) {
@@ -588,7 +589,7 @@ public class UpdateService extends Service {
             intent.putExtra(DOWNLOAD_SUCCESS_NOTIFICATION_FLAG, downloadSuccessNotificationFlag);
             intent.putExtra(DOWNLOAD_ERROR_NOTIFICATION_FLAG, downloadErrorNotificationFlag);
             intent.putExtra(IS_SEND_BROADCAST, isSendBroadcast);
-            context.startService(intent);
+            context.startService(intent);//启动Service下载新的apk，同时将参数通过Intent传递
 
             return this;
         }
