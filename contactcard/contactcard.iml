@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <module external.linked.project.id=":contactcard" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$/.." external.system.id="GRADLE" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="android-gradle" name="Android-Gradle">
@@ -105,3 +106,10 @@
     <orderEntry type="library" exported="" name="Rong_IMLib" level="project" />
   </component>
 </module>
+=======
+<module version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
+>>>>>>> develop
