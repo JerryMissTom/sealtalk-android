@@ -39,7 +39,7 @@ import cn.rongcloud.im.ui.adapter.GroupListAdapter;
 import de.greenrobot.dao.query.QueryBuilder;
 import io.rong.imkit.RongIM;
 
-/**
+/**搜索更多Group，路径：会话->搜索图标->更多群组
  * Created by tiankui on 16/9/20.
  */
 public class SealSearchMoreGroupActivity extends Activity {

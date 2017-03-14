@@ -36,7 +36,7 @@ import io.rong.imkit.RongIM;
 import io.rong.imlib.RongIMClient;
 import io.rong.imlib.model.UserInfo;
 
-/**
+/**登录界面
  * Created by AMing on 16/1/15.
  * Company RongCloud
  */

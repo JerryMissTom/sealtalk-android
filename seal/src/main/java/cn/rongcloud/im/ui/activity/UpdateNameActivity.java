@@ -18,7 +18,7 @@ import cn.rongcloud.im.server.widget.LoadDialog;
 import io.rong.imkit.RongIM;
 import io.rong.imlib.model.UserInfo;
 
-/**修改昵称
+/**修改昵称，我->用户头像->昵称
  * Created by AMing on 16/6/23.
  * Company RongCloud
  */

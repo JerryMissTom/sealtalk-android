@@ -7,7 +7,7 @@ import android.widget.Button;
 
 import cn.rongcloud.im.R;
 
-
+//公共号界面，路径：通讯录=》公共号
 public class PublicServiceActivity extends BaseActivity {
 
     @Override

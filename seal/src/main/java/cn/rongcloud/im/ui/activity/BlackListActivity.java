@@ -17,7 +17,7 @@ import cn.rongcloud.im.server.widget.LoadDialog;
 import cn.rongcloud.im.server.widget.SelectableRoundedImageView;
 import io.rong.imageloader.core.ImageLoader;
 import io.rong.imlib.model.UserInfo;
-
+//黑名单界面，路径：我->账号设置->隐私->黑名单
 public class BlackListActivity extends BaseActivity {
 
     private TextView isShowData;

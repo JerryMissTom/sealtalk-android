@@ -78,6 +78,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
     }
 
     private void addEditTextListener() {
+        //输入过程中验证是否为手机号
         mPhoneEdit.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -105,6 +106,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
 
             }
         });
+        //输入6位验证码，输入法自动隐藏
         mCodeEdit.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -277,6 +279,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
                     NToast.longToast(mContext, R.string.phone_number_is_null);
                 } else {
                     isRequestCode = true;
+                    //使用CountDownTimer实现倒计时
                     DownTimer downTimer = new DownTimer();
                     downTimer.setListener(this);
                     downTimer.startDown(60 * 1000);

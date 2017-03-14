@@ -346,6 +346,7 @@ public class ContactsFragment extends Fragment implements View.OnClickListener {
         }
     }
 
+    //显示个人信息item
     private void updatePersonalUI() {
         SharedPreferences sp = SealAppContext.getInstance().getContext().getSharedPreferences("config", Context.MODE_PRIVATE);
         mId = sp.getString(SealConst.SEALTALK_LOGIN_ID, "");
@@ -359,6 +360,7 @@ public class ContactsFragment extends Fragment implements View.OnClickListener {
         }
     }
 
+    //显示备注名还是网名
     private void handleFriendDataForSort() {
         for (Friend friend : mFriendList) {
             if (friend.isExitsDisplayName()) {
@@ -371,6 +373,7 @@ public class ContactsFragment extends Fragment implements View.OnClickListener {
         }
     }
 
+    //转换成大写字母
     private String replaceFirstCharacterWithUppercase(String spelling) {
         if (!TextUtils.isEmpty(spelling)) {
             char first = spelling.charAt(0);

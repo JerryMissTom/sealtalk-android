@@ -16,8 +16,8 @@ import cn.rongcloud.im.server.response.ChangePasswordResponse;
 import cn.rongcloud.im.server.utils.NToast;
 import cn.rongcloud.im.server.widget.LoadDialog;
 
-/**密码修改
- * Created by AMing on 16/
+/**修改密码，路径：我->账号设置->密码修改
+ * Created by AMing on 16/6/
  * Company RongCloud
  */
 public class UpdatePasswordActivity extends BaseActivity implements View.OnClickListener {

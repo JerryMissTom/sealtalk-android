@@ -202,6 +202,7 @@ public class MyAccountActivity extends BaseActivity implements View.OnClickListe
         }
 
         dialog = new BottomMenuDialog(mContext);
+        //点击拍照按钮，先获取权限
         dialog.setConfirmListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
@@ -231,6 +232,7 @@ public class MyAccountActivity extends BaseActivity implements View.OnClickListe
                 photoUtils.takePicture(MyAccountActivity.this);
             }
         });
+        //点击从本地导入
         dialog.setMiddleListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {

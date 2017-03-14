@@ -22,6 +22,7 @@ import cn.rongcloud.im.server.broadcast.BroadcastManager;
 import cn.rongcloud.im.server.utils.NToast;
 import cn.rongcloud.im.server.widget.DialogWithYesOrNoUtils;
 
+//关于SealTalk界面，路径：我->关于SealTalk
 public class AboutRongCloudActivity extends BaseActivity {
 
     private boolean isHasNewVersion;

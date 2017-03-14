@@ -22,7 +22,7 @@ import cn.rongcloud.im.server.utils.downtime.DownTimerListener;
 import cn.rongcloud.im.server.widget.ClearWriteEditText;
 import cn.rongcloud.im.server.widget.LoadDialog;
 
-/**
+/**忘记密码界面
  * Created by AMing on 16/2/2.
  * Company RongCloud
  */

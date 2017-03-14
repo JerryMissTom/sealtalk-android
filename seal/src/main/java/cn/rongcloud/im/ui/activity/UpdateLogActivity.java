@@ -10,7 +10,7 @@ import android.webkit.WebViewClient;
 
 import cn.rongcloud.im.R;
 
-//官方网站的日志页
+//进入官网看更新日志，路径:我->关于sealTalk->更新日志
 @SuppressLint("SetJavaScriptEnabled")
 public class UpdateLogActivity extends BaseActivity {
 

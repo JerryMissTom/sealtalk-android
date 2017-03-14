@@ -41,7 +41,7 @@ import de.greenrobot.dao.query.QueryBuilder;
 import io.rong.imageloader.core.ImageLoader;
 import io.rong.imkit.RongIM;
 
-/**
+/**搜索更多Friend，路径：会话->搜索图标->更多朋友
  * Created by tiankui on 16/9/2.
  */
 public class SealSearchMoreFriendsActivity extends Activity implements AdapterView.OnItemClickListener {
@@ -80,6 +80,7 @@ public class SealSearchMoreFriendsActivity extends Activity implements AdapterVi
     public void initData() {
 
         mExecutor = new ThreadPoolExecutor(3, 5, 0, TimeUnit.MILLISECONDS, new LinkedBlockingQueue<Runnable>());
+
         //文字改变时，新线程从数据库获取Friend数据
         mSearchEditText.addTextChangedListener(new TextWatcher() {
             @Override

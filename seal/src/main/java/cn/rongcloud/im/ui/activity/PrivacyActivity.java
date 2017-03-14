@@ -7,7 +7,7 @@ import android.widget.RelativeLayout;
 
 import cn.rongcloud.im.R;
 
-
+//隐私界面，路径：我->账户设置->隐私
 public class PrivacyActivity extends BaseActivity {
 
     @Override
